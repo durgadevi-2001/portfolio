@@ -1,0 +1,34 @@
+// Projects Component Styles
+$primary-color: #4CAF50;
+$text-color: #333;
+
+#projects {
+  padding: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+  }
+
+  div {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 1.5rem;
+      color: $text-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: darken($text-color, 20%);
+    }
+  }
+}

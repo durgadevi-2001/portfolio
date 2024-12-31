@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 1rem 0;
+  
+    a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+  
+      &.active {
+        border-bottom: 2px solid #4CAF50;
+      }
+    }
+    .active {
+        font-weight: bold;
+        color: rgb(248, 21, 93);
+      }
+  }
+  
