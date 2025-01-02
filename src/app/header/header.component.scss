@@ -1,24 +1,57 @@
+// nav {
+//     display: flex;
+//     justify-content: center;
+//     background: #333;
+//     padding: 1rem 0;
+//     height:70px;
+  
+//     a {
+//       color: #fff;
+//       margin: 0 1rem;
+//       text-decoration: none;
+//       font-weight: bold;
+  
+//       &.active {
+//         border-bottom: 2px solid #4CAF50;
+//       }
+//     }
+//     .active {
+//         font-weight: bold;
+//         color: rgb(248, 21, 93);
+//       }
+//   }
 nav {
-    display: flex;
-    justify-content: center;
-    background: #333;
-    padding: 1rem 0;
-    height:70px;
-    align-items: center;
-  
-    a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-  
-      &.active {
-        border-bottom: 2px solid #4CAF50;
-      }
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 1rem 0;
+  align-items: center;
+  height: 70px;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Stick it to the top of the screen */
+  left: 0; /* Make sure it spans the full width */
+  width: 100%; /* Ensure it spans the full width of the page */
+  z-index: 1000; /* Make sure the navbar stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow below the navbar */
+
+  a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+
+    &.active {
+      border-bottom: 2px solid #4CAF50;
     }
-    .active {
-        font-weight: bold;
-        color: rgb(248, 21, 93);
-      }
   }
-  
+
+  .active {
+    font-weight: bold;
+    color: rgb(248, 21, 93);
+  }
+}
+
+// Add some padding to the body to prevent the content from being hidden behind the fixed navbar
+body {
+  padding-top: 70px; /* Adjust this value based on your navbar height */
+}
